@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lei-notes/appearance",
+  "title": "外观切换",
+  "description": "访客可选择白天、黑夜或跟随系统。",
+  "category": "theme",
+  "icon": "admin-customizer",
+  "textdomain": "lei-notes",
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": "外观"
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "lei-notes-editor"
+}

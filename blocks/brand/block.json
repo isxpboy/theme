@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lei-notes/brand",
+  "title": "Lei 标识",
+  "description": "可切换手写字标、站点名称或自定义 Logo。",
+  "category": "theme",
+  "icon": "editor-code",
+  "textdomain": "lei-notes",
+  "attributes": {
+    "variant": {
+      "type": "string",
+      "default": "signature",
+      "enum": [
+        "signature",
+        "text",
+        "custom-logo"
+      ]
+    },
+    "animated": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "lei-notes-editor"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lei-notes/category-filter",
+  "title": "文章分类导航",
+  "description": "从真实文章分类生成链接，支持服务端抓取。",
+  "category": "theme",
+  "icon": "admin-customizer",
+  "textdomain": "lei-notes",
+  "attributes": {},
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "lei-notes-editor"
+}

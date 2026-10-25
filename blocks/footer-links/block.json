@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lei-notes/footer-links",
+  "title": "页脚图标与地图",
+  "description": "社交图标、文章地图、XML 地图与 RSS 入口。",
+  "category": "theme",
+  "icon": "admin-customizer",
+  "textdomain": "lei-notes",
+  "attributes": {
+    "github": {
+      "type": "string",
+      "default": ""
+    },
+    "x": {
+      "type": "string",
+      "default": ""
+    },
+    "instagram": {
+      "type": "string",
+      "default": ""
+    },
+    "showRss": {
+      "type": "boolean",
+      "default": true
+    },
+    "showMap": {
+      "type": "boolean",
+      "default": true
+    },
+    "showXml": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "lei-notes-editor"
+}

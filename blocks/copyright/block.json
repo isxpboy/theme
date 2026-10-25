@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lei-notes/copyright",
+  "title": "自动版权信息",
+  "description": "年份自动更新，名称可单独填写或继承站点名称。",
+  "category": "theme",
+  "icon": "admin-customizer",
+  "textdomain": "lei-notes",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "lei-notes-editor"
+}

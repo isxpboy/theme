@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lei-notes/post-meta",
+  "title": "文章信息与朗读",
+  "description": "文章分类、日期、阅读时间与可选朗读按钮。",
+  "category": "theme",
+  "icon": "admin-customizer",
+  "textdomain": "lei-notes",
+  "attributes": {
+    "showCategory": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "showReadingTime": {
+      "type": "boolean",
+      "default": true
+    },
+    "showReader": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "lei-notes-editor"
+}

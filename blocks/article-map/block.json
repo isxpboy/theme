@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lei-notes/article-map",
+  "title": "公开文章地图",
+  "description": "自动显示公开文章与可选站点页面，支持分页。",
+  "category": "theme",
+  "icon": "admin-customizer",
+  "textdomain": "lei-notes",
+  "attributes": {
+    "perPage": {
+      "type": "number",
+      "default": 100
+    },
+    "showPages": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "lei-notes-editor"
+}

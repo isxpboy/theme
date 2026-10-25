@@ -1,0 +1,253 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "850px",
+      "wideSize": "1040px"
+    },
+    "color": {
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "base",
+          "name": "纸白",
+          "color": "#fbfbfc"
+        },
+        {
+          "slug": "foreground",
+          "name": "墨色",
+          "color": "#252529"
+        },
+        {
+          "slug": "secondary",
+          "name": "次级文字",
+          "color": "#73737b"
+        },
+        {
+          "slug": "accent",
+          "name": "松绿",
+          "color": "#416f65"
+        },
+        {
+          "slug": "surface",
+          "name": "浅灰面板",
+          "color": "#f1f2f4"
+        },
+        {
+          "slug": "line",
+          "name": "分隔线",
+          "color": "#e7e7eb"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "slug": "system",
+          "name": "系统无衬线",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"PingFang SC\", \"Noto Sans SC\", \"Segoe UI\", \"Microsoft YaHei UI\", sans-serif"
+        },
+        {
+          "slug": "mono",
+          "name": "代码等宽",
+          "fontFamily": "\"Cascadia Code\", \"SFMono-Regular\", Consolas, monospace"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "tiny",
+          "name": "注释",
+          "size": "11px"
+        },
+        {
+          "slug": "small",
+          "name": "小号",
+          "size": "13px"
+        },
+        {
+          "slug": "body",
+          "name": "正文",
+          "size": "15px"
+        },
+        {
+          "slug": "article",
+          "name": "列表标题",
+          "size": "21px"
+        },
+        {
+          "slug": "heading",
+          "name": "文章标题",
+          "size": "34px"
+        }
+      ]
+    },
+    "spacing": {
+      "units": [
+        "px",
+        "rem",
+        "em",
+        "%",
+        "vw"
+      ],
+      "spacingSizes": [
+        {
+          "slug": "20",
+          "name": "紧凑",
+          "size": "8px"
+        },
+        {
+          "slug": "30",
+          "name": "较小",
+          "size": "16px"
+        },
+        {
+          "slug": "40",
+          "name": "常规",
+          "size": "24px"
+        },
+        {
+          "slug": "50",
+          "name": "宽松",
+          "size": "40px"
+        },
+        {
+          "slug": "60",
+          "name": "章节",
+          "size": "64px"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|base",
+      "text": "var:preset|color|foreground"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|system",
+      "fontSize": "var:preset|font-size|body",
+      "lineHeight": "1.8"
+    },
+    "spacing": {
+      "blockGap": "0",
+      "padding": {
+        "top": "0",
+        "bottom": "0",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|accent"
+        },
+        "typography": {
+          "textDecoration": "none"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var:preset|font-size|heading",
+          "fontWeight": "550",
+          "lineHeight": "1.55"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var:preset|font-size|article",
+          "fontWeight": "550",
+          "lineHeight": "1.7"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "18px",
+          "fontWeight": "550"
+        }
+      }
+    },
+    "blocks": {
+      "core/post-title": {
+        "elements": {
+          "link": {
+            "color": {
+              "text": "var:preset|color|foreground"
+            }
+          }
+        }
+      },
+      "core/post-content": {
+        "typography": {
+          "lineHeight": "2.05"
+        }
+      },
+      "core/code": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|mono",
+          "fontSize": "13px",
+          "lineHeight": "1.9"
+        }
+      },
+      "core/quote": {
+        "border": {
+          "left": {
+            "color": "var:preset|color|accent",
+            "width": "2px",
+            "style": "solid"
+          }
+        },
+        "spacing": {
+          "padding": {
+            "left": "20px"
+          }
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "页头",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "页脚",
+      "area": "footer"
+    },
+    {
+      "name": "sidebar",
+      "title": "文章侧栏",
+      "area": "uncategorized"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "page-article-map",
+      "title": "文章地图",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "single-sidebar",
+      "title": "文章与侧栏",
+      "postTypes": [
+        "post"
+      ]
+    },
+    {
+      "name": "page-no-title",
+      "title": "无标题页面",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ]
+}

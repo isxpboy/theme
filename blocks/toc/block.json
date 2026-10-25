@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lei-notes/toc",
+  "title": "文章目录",
+  "description": "自动读取文章二级、三级标题；编辑标题即可更新目录。",
+  "category": "theme",
+  "icon": "list-view",
+  "textdomain": "lei-notes",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "本文目录"
+    },
+    "open": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "lei-notes-editor"
+}

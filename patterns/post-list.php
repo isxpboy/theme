@@ -1,0 +1,8 @@
+<?php
+/**
+ * Title: 可编辑文章列表
+ * Slug: lei-notes/post-list
+ * Categories: lei-notes
+ */
+?>
+<!-- wp:query {"queryId":1,"query":{"perPage":5,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"className":"lei-post-query"} --><div class="wp-block-query lei-post-query"><!-- wp:post-template {"className":"post-list"} --><!-- wp:group {"className":"post-item","layout":{"type":"flex","flexWrap":"nowrap"}} --><div class="wp-block-group post-item"><!-- wp:group {"className":"post-copy","layout":{"type":"default"}} --><div class="wp-block-group post-copy"><!-- wp:lei-notes/post-meta {} /--><!-- wp:post-title {"level":2,"isLink":true,"fontSize":"article"} /--><!-- wp:post-excerpt {"moreText":"","excerptLength":45,"className":"post-summary"} /--><!-- wp:group {"className":"post-bottom","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} --><div class="wp-block-group post-bottom"><!-- wp:post-terms {"term":"post_tag","className":"tags"} /--><!-- wp:read-more {"content":"阅读全文 ↗","className":"read-link"} /--></div><!-- /wp:group --></div><!-- /wp:group --><!-- wp:post-featured-image {"isLink":true,"width":"186px","aspectRatio":"3/2","className":"post-thumbnail"} /--></div><!-- /wp:group --><!-- /wp:post-template --><!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"},"className":"lei-pagination"} --><!-- wp:query-pagination-previous {"label":"← 上一页"} /--><!-- wp:query-pagination-numbers {} /--><!-- wp:query-pagination-next {"label":"下一页 →"} /--><!-- /wp:query-pagination --><!-- wp:query-no-results {} --><!-- wp:paragraph {} --><p>暂时没有找到文章，换个关键词或分类试试。</p><!-- /wp:paragraph --><!-- /wp:query-no-results --></div><!-- /wp:query -->

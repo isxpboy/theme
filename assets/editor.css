@@ -1,0 +1,12 @@
+/* Keep the editing surface usable and retain native editor controls. */
+.editor-styles-wrapper { background:var(--wp--preset--color--base,#fbfbfc);color:var(--wp--preset--color--foreground,#252529); }
+.editor-styles-wrapper .site-header { position:static;z-index:auto; }
+.editor-styles-wrapper .header-inner { width:100%;height:auto;min-height:75px; }
+.editor-styles-wrapper .logo-letter,.editor-styles-wrapper .logo-dot { animation:none!important;stroke-dashoffset:0;opacity:1; }
+.editor-styles-wrapper .lei-main { max-width:var(--wp--style--global--content-size,850px); }
+.editor-styles-wrapper .home-main::before,.editor-styles-wrapper .article-main::before { display:none; }
+.editor-styles-wrapper .brand-logo { width:112px;height:43px; }
+.editor-styles-wrapper .site-footer { width:100%; }
+.editor-styles-wrapper .footer-note { text-align:center; }
+.editor-styles-wrapper .wp-block-code { font-family:var(--wp--preset--font-family--mono);font-size:13px;line-height:1.9; }
+.editor-styles-wrapper .article-toc,.editor-styles-wrapper .footer-links,.editor-styles-wrapper .post-meta { pointer-events:none; }
